@@ -1,8 +1,8 @@
 # SpamScam
 
-Tool buat ngebombing OTP ke beberapa provider pinjol sekaligus. Tiap siklus ngirim request ke semua provider, terus nunggu cooldown 62 detik sebelum lanjut ke siklus berikutnya.
+Tool buat ngebombing OTP. Tiap siklus ngirim request ke semua provider, terus nunggu cooldown 62 detik sebelum lanjut ke siklus berikutnya.
 
-## Provider yang tersedia
+## Provider yang tersedia saat ini
 
 - AdaKami
 - Indosaku
@@ -40,5 +40,3 @@ smsOtp/
     ├── rc_provider.py
     └── kreditnavigator_provider.py
 ```
-
-Kalau mau nambahin provider baru, tinggal buat file baru di folder `provider/` dengan fungsi `send_otp(mobile: str) -> bool`, terus daftarin di `provider/__init__.py` dan `main.py`.
